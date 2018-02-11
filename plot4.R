@@ -37,14 +37,14 @@ with(subData, plot(dateTime, Global_active_power, type="l",
 # Create line graph of voltage data with weekdays on x-axis with label 'datetime'
 # and 'Voltage' as y-axis label
 with(subData, plot(dateTime, Voltage, type="l", 
-                   ylab="Global Active Power (kilowatts)",
+                   ylab="Voltage",
                    xlab="datetime"))
 
 # 3 Lower left plot 
 # Overlay sub_metering_data onto same plot with a legend
 # Plot the first sub_metering data
 plot(subData$dateTime, subData$Sub_metering_1, type="l", 
-                   ylab="Global Active Power (kilowatts)",
+                   ylab="Energy sub metering",
                    xlab="")
 
 # Overlay the sub_metering_2 data to the plot, coloring the line red

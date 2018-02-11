@@ -21,7 +21,7 @@ png('plot3.png')
 
 # Plot the first sub_metering data
 plot(subData$dateTime, subData$Sub_metering_1, type="l", 
-                   ylab="Global Active Power (kilowatts)",
+                   ylab="Energy sub metering",
                    xlab="")
 
 # Overlay the sub_metering_2 data to the plot, coloring the line red
